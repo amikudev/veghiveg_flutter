@@ -27,6 +27,7 @@ class WebViewExampleState extends State<WebViewExample> {
       home: SafeArea(
         child: WebView(
           initialUrl: 'https://flutter.dev',
+          javascriptMode: JavascriptMode.unrestricted,
         ),
       ),
     );
