@@ -25,9 +25,20 @@ class WebViewExampleState extends State<WebViewExample> {
     return MaterialApp(
       title: "Veg Hi Veg",
       home: SafeArea(
-        child: WebView(
-          initialUrl: 'https://flutter.dev',
-          javascriptMode: JavascriptMode.unrestricted,
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text("Veg Hi Veg"),
+            backgroundColor: Colors.deepPurple,
+          ),
+          body: Container(
+            height: double.infinity,
+            width: double.infinity,
+            child: WebView(
+              initialUrl: 'https://flutter.dev',
+              javascriptMode: JavascriptMode.unrestricted,
+              // onPageFinished: ,
+            ),
+          ),
         ),
       ),
     );
